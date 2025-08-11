@@ -332,12 +332,12 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-50 to-white dark:from-slate-800 dark:to-slate-900">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-slate-900 dark:text-white mb-6">
             Ready to Transform Your Content?
           </h2>
-          <p className="text-xl text-slate-600 dark:text-slate-300 mb-8">
+          <p className="text-xl text-slate-700 dark:text-slate-200 mb-8">
             Join thousands of professionals who trust our platform to enhance their content quality 
             and improve engagement.
           </p>

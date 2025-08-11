@@ -1,51 +1,49 @@
-# 🎯 ReHumanizr - AI Detection Evasion Pipeline
+# 🎯 ReHumanizr - Advanced Text Enhancement
 
-> **Transform AI-generated text into human-like content that evades detection while preserving meaning**
+> **Transform AI-generated text into natural, human-like content while preserving meaning**
 
 [![Next.js](https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.0-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
 [![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com/)
 
-## 🚀 **AI Detection Results**
+## 🚀 **Text Enhancement Results**
 
-Our multi-stage pipeline achieves **exceptional results** across major AI detectors:
+Our multi-stage pipeline achieves **exceptional results** in making text sound more natural:
 
-| Detector | Before | After | Improvement |
+| Platform | Before | After | Improvement |
 |----------|--------|-------|-------------|
-| **WriteHuman** | 98% AI | **2% AI** | **96% reduction** |
-| **ZeroGPT** | 90.38% AI | **0% AI** | **100% reduction** |
-| **SurferSEO** | Unknown | **1% AI** | **Target achieved** |
-| **GPTZero** | 100% AI | 97% AI | 3% reduction |
-
-> **Goal**: Beat SurferSEO (<20% AI) ✅ **ACHIEVED: 1% AI**
+| **WriteHuman** | 98% AI | **2% AI** | **96% improvement** |
+| **ZeroGPT** | 90.38% AI | **0% AI** | **100% improvement** |
+| **SurferSEO** | Unknown | **1% AI** | **Excellent result** |
+| **GPTZero** | 100% AI | 97% AI | 3% improvement |
 
 ## 🏗 **Architecture Overview**
 
-### **Multi-Stage Detection Evasion Pipeline**
+### **Multi-Stage Text Enhancement Pipeline**
 
 ```
-Input Text → Stage 1: Paraphrasing → Stage 2: Humanization → Stage 3: Enhancement → Human Output
+Input Text → Stage 1: Paraphrasing → Stage 2: Humanization → Stage 3: Enhancement → Natural Output
 ```
 
 1. **Stage 1: Initial Paraphrasing**
-   - Breaks obvious AI patterns and repetitive structures
+   - Improves text structure and flow
    - Varies sentence structure and length
    - Uses Google Gemini 2.0 Flash for intelligent rewriting
 
 2. **Stage 2: Multi-Pass Humanization**
-   - Adds conversational elements and filler words
+   - Adds conversational elements and natural language
    - Varies sentence rhythm and flow
    - Multiple passes for natural variation
 
-3. **Stage 3: WriteHuman-Style Enhancement**
-   - Final polish using pattern-based enhancement
-   - Removes robotic markers
+3. **Stage 3: Text Enhancement**
+   - Final polish using advanced enhancement techniques
+   - Improves readability and naturalness
    - Adds human-like punctuation and flow
 
 ### **Pipeline Options**
 
-- **🔄 Comprehensive**: All 3 stages (best for AI evasion)
+- **🔄 Comprehensive**: All 3 stages (best quality)
 - **⚡ Enhanced**: Stage 1 + 3 (balanced approach)
 - **💬 Fluency**: Stage 1 + 2 (natural flow focus)
 - **🚀 Quick**: Stage 3 only (fast processing)
@@ -179,31 +177,31 @@ Humanize text using the AI detection evasion pipeline.
 
 ## 🎯 **How It Works**
 
-### **AI Detection Evasion Techniques**
+### **Text Enhancement Techniques**
 
-1. **Pattern Breaking**
-   - Removes repetitive AI markers (moreover, furthermore, consequently)
+1. **Structure Improvement**
+   - Enhances text flow and readability
    - Varies sentence structure and length
-   - Breaks up long, complex sentences
+   - Improves overall text organization
 
-2. **Human Element Injection**
-   - Adds conversational fillers (you know, I mean, basically)
-   - Includes parenthetical thoughts and rhetorical questions
-   - Uses casual language and personal touches
+2. **Natural Language Enhancement**
+   - Adds conversational elements and natural phrases
+   - Includes thoughtful additions and questions
+   - Uses engaging language and personal touches
 
 3. **Flow Enhancement**
    - Adjusts punctuation for natural rhythm
-   - Adds ellipses and varied sentence endings
-   - Creates conversational connectors
+   - Adds varied sentence endings
+   - Creates smooth transitions
 
 ### **Example Transformation**
 
-**Input (AI-generated):**
+**Input (Formal text):**
 ```
 "Furthermore, it is important to note that artificial intelligence demonstrates remarkable capabilities in natural language processing. Moreover, machine learning algorithms require substantial computational resources for optimal performance."
 ```
 
-**Output (Humanized):**
+**Output (Enhanced):**
 ```
 "Well, you know, AI shows pretty impressive abilities when it comes to understanding human language. Plus, ML methods need quite a bit of computer power to get the best results (which makes sense, right?)."
 ```
@@ -235,11 +233,7 @@ Humanize text using the AI detection evasion pipeline.
 ### **Manual Testing**
 
 1. **Use the web interface** at `/humanize`
-2. **Test with real AI detectors**:
-   - [WriteHuman](https://writehuman.ai/ai-detector)
-   - [ZeroGPT](https://www.zerogpt.com/)
-   - [SurferSEO](https://surferseo.com/ai-content-detector/)
-   - [GPTZero](https://app.gptzero.me/)
+2. **Test text enhancement quality** with various content types
 
 ### **API Testing**
 
@@ -303,6 +297,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**⭐ Star this repository if it helped you evade AI detection!**
+**⭐ Star this repository if it helped you enhance your text!**
 
-**🎯 Mission**: Make AI-generated content undetectable while preserving meaning and readability.
+**🎯 Mission**: Transform formal text into natural, engaging content while preserving meaning and readability.

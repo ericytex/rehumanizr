@@ -129,10 +129,10 @@ export default function HumanizePage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="text-center mb-8">
           <h1 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white mb-4">
-            AI Text Humanizer
+            Text Enhancement Tool
           </h1>
           <p className="text-xl text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
-            Transform AI-generated text into natural, human-like content that evades detection
+            Transform formal text into natural, conversational content while preserving meaning
           </p>
         </div>
 
@@ -330,9 +330,9 @@ export default function HumanizePage() {
 
         {/* Pipeline Info */}
         <div className="mt-12 bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-lg border border-slate-200 dark:border-slate-700">
-          <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-4">AI Detection Evasion Pipelines</h3>
+          <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-4">Text Enhancement Pipelines</h3>
           <p className="text-slate-600 dark:text-slate-400 mb-6">
-            Our multi-stage pipeline is designed to beat AI detectors like SurferSEO, GPTZero, and WriteHuman while preserving meaning.
+            Our multi-stage pipeline transforms text to sound more natural and conversational while preserving meaning.
           </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
             <div className="p-4 border border-slate-200 dark:border-slate-700 rounded-lg">
@@ -345,7 +345,7 @@ export default function HumanizePage() {
               </p>
               <div className="mt-2 text-xs text-slate-500">
                 <span className="bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-200 px-2 py-1 rounded">
-                  Best for AI evasion
+                  Best quality
                 </span>
               </div>
             </div>
@@ -356,7 +356,7 @@ export default function HumanizePage() {
                 <span className="font-medium text-slate-900 dark:text-white">Enhanced</span>
               </div>
               <p className="text-sm text-slate-600 dark:text-slate-400">
-                Stage 1 + 3: Paraphrase + WriteHuman Enhancement
+                Stage 1 + 3: Paraphrase + Enhancement
               </p>
               <div className="mt-2 text-xs text-slate-500">
                 <span className="bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-200 px-2 py-1 rounded">
@@ -371,7 +371,7 @@ export default function HumanizePage() {
                 <span className="font-medium text-slate-900 dark:text-white">Fluency</span>
               </div>
               <p className="text-sm text-slate-600 dark:text-slate-400">
-                Stage 1 + 2: Paraphrase + Multi-pass Humanization
+                Stage 1 + 2: Paraphrase + Humanization
               </p>
               <div className="mt-2 text-xs text-slate-500">
                 <span className="bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-200 px-2 py-1 rounded">
@@ -386,22 +386,13 @@ export default function HumanizePage() {
                 <span className="font-medium text-slate-900 dark:text-white">Quick</span>
               </div>
               <p className="text-sm text-slate-600 dark:text-slate-400">
-                Stage 3 only: WriteHuman Enhancement
+                Stage 3 only: Enhancement
               </p>
               <div className="mt-2 text-xs text-slate-500">
                 <span className="bg-orange-100 dark:bg-orange-900/30 text-orange-800 dark:text-orange-200 px-2 py-1 rounded">
                   Fast processing
                 </span>
               </div>
-            </div>
-          </div>
-          
-          <div className="mt-6 p-4 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg">
-            <h4 className="font-medium text-blue-900 dark:text-blue-100 mb-2">How It Works</h4>
-            <div className="text-sm text-blue-800 dark:text-blue-200 space-y-1">
-              <p><strong>Stage 1:</strong> Breaks obvious AI patterns through paraphrasing</p>
-              <p><strong>Stage 2:</strong> Adds human-like variation through multi-pass rewriting</p>
-              <p><strong>Stage 3:</strong> Final polish using WriteHuman-style enhancement</p>
             </div>
           </div>
         </div>

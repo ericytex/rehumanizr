@@ -21,29 +21,29 @@ export function writeHumanEnhancer(text: string, options: EnhancementOptions = {
   let enhanced = text;
 
   if (removeRoboticPatterns) {
-    enhanced = removeRoboticPatterns(enhanced);
+    enhanced = _removeRoboticPatterns(enhanced);
   }
 
   if (adjustPunctuation) {
-    enhanced = adjustPunctuation(enhanced);
+    enhanced = _adjustPunctuation(enhanced);
   }
 
   if (addFillerWords) {
-    enhanced = addHumanFillerWords(enhanced);
+    enhanced = _addHumanFillerWords(enhanced);
   }
 
   if (varySentenceLength) {
-    enhanced = varySentenceLength(enhanced);
+    enhanced = _varySentenceLength(enhanced);
   }
 
   if (addConversationalElements) {
-    enhanced = addConversationalElements(enhanced);
+    enhanced = _addConversationalElements(enhanced);
   }
 
   return enhanced.trim();
 }
 
-function removeRoboticPatterns(text: string): string {
+function _removeRoboticPatterns(text: string): string {
   return text
     // Remove double full stops
     .replace(/\.{2,}/g, '.')
@@ -66,7 +66,7 @@ function removeRoboticPatterns(text: string): string {
     });
 }
 
-function adjustPunctuation(text: string): string {
+function _adjustPunctuation(text: string): string {
   return text
     // Add occasional ellipses for natural flow
     .replace(/([.!?])\s+([A-Z][a-z]+)/g, (match, punct, word) => {
@@ -80,7 +80,7 @@ function adjustPunctuation(text: string): string {
     .replace(/\./g, () => Math.random() > 0.9 ? '...' : '.');
 }
 
-function addHumanFillerWords(text: string): string {
+function _addHumanFillerWords(text: string): string {
   const fillerWords = [
     'you know', 'I mean', 'basically', 'actually', 'sort of', 'kind of',
     'well', 'so', 'right', 'like', 'um', 'uh', 'anyway', 'anyhow'
@@ -109,7 +109,7 @@ function addHumanFillerWords(text: string): string {
     });
 }
 
-function varySentenceLength(text: string): string {
+function _varySentenceLength(text: string): string {
   return text
     // Break up very long sentences
     .replace(/([^.!?]{80,})/g, (match) => {
@@ -135,7 +135,7 @@ function varySentenceLength(text: string): string {
     });
 }
 
-function addConversationalElements(text: string): string {
+function _addConversationalElements(text: string): string {
   return text
     // Add rhetorical questions
     .replace(/([.!?])\s+([A-Z][a-z]+)/g, (match, punct, word) => {
@@ -209,18 +209,18 @@ export function fullEnhancement(text: string): string {
   let enhanced = text;
   
   // First pass: Remove obvious AI patterns
-  enhanced = removeRoboticPatterns(enhanced);
+  enhanced = _removeRoboticPatterns(enhanced);
   
   // Second pass: Add human elements
-  enhanced = addHumanFillerWords(enhanced);
-  enhanced = addConversationalElements(enhanced);
+  enhanced = _addHumanFillerWords(enhanced);
+  enhanced = _addConversationalElements(enhanced);
   
   // Third pass: Advanced pattern replacement
   enhanced = advancedPatternReplacement(enhanced);
   
   // Final pass: Adjust punctuation and flow
-  enhanced = adjustPunctuation(enhanced);
-  enhanced = varySentenceLength(enhanced);
+  enhanced = _adjustPunctuation(enhanced);
+  enhanced = _varySentenceLength(enhanced);
   
   return enhanced.trim();
 } 

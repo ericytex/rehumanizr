@@ -38,7 +38,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-slate-900 text-white">
+    <footer className="bg-slate-900 dark:bg-slate-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-8">
@@ -49,8 +49,8 @@ export default function Footer() {
               <span className="text-2xl font-bold">ReHumanizer</span>
             </div>
             <p className="text-slate-300 mb-6 max-w-md">
-              Transform AI-generated text into human-like content while evading detection. 
-              Advanced AI detection evasion with multiple pipelines and education levels.
+              Transform formal text into natural, conversational content while preserving meaning. 
+              Advanced text enhancement with multiple pipelines and education levels.
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((social) => {

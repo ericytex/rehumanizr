@@ -1,7 +1,16 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Menu, X, Sparkles, User, LogOut, Settings, CreditCard, BarChart3 } from "lucide-react";
+import dynamic from "next/dynamic";
+
+// Dynamically import ThemeToggle to avoid SSR issues
+const ThemeToggle = dynamic(() => import("./ThemeToggle"), {
+  ssr: false,
+  loading: () => (
+    <div className="w-9 h-9 bg-slate-200 dark:bg-slate-700 rounded-lg animate-pulse" />
+  ),
+});
 
 interface NavigationProps {
   currentPage?: string;
@@ -18,6 +27,11 @@ export default function Navigation({
 }: NavigationProps) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   const navigation = [
     { name: "Home", href: "/", current: currentPage === "home" },
@@ -65,6 +79,9 @@ export default function Navigation({
 
           {/* User Menu / Auth Buttons */}
           <div className="flex items-center space-x-4">
+            {/* Theme Toggle - Only render when mounted */}
+            {isMounted && <ThemeToggle />}
+            
             {showUserMenu ? (
               <div className="relative">
                 <button

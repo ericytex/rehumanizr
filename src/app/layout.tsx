@@ -13,11 +13,15 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ReHumanizer - AI Text Humanization Service",
-  description: "Transform AI-generated text into human-like content while evading detection. Advanced AI detection evasion with multiple pipelines and education levels.",
-  keywords: "AI text humanization, AI detection evasion, content writing, text rewriting, AI content",
+  title: "ReHumanizer - Advanced Text Enhancement Service",
+  description: "Transform formal text into natural, conversational content while preserving meaning. Advanced text enhancement with multiple pipelines and education levels.",
+  keywords: "text enhancement, content writing, text rewriting, natural language, conversational writing",
   authors: [{ name: "ReHumanizer Team" }],
-  viewport: "width=device-width, initial-scale=1",
+};
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
 };
 
 export default function RootLayout({
